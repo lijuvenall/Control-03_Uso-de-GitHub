@@ -84,7 +84,7 @@ public class FrmSuma extends javax.swing.JFrame {
         });
         getContentPane().add(btnCalcular, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 200, -1, -1));
 
-        btnSalir.setText("Salir");
+        btnSalir.setText("Salir");// EL BOTON SALIR SIRVE PARA PODER CERRAR LA APLICACION//
         btnSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSalirActionPerformed(evt);
@@ -104,8 +104,12 @@ public class FrmSuma extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcularActionPerformed
+      
         // TODO add your handling code here:
         int n1, n2, resp;
+          /* SE DECLARA TRES VARIABLES DE TIPO INT PARA PODER CAPTURAR LOS VALORES DE TXTN1 Y TXTN2 LUEGO PASARLE EL METODO OPERARSUMA 
+          PARA QUE REALICE LA OPERACION DE SUMAR Y LUEGO QUE NOS IMPRIMA EL RESULTADO.
+        */
         n1 = Integer.parseInt(txtN1.getText());
         n2 = Integer.parseInt(txtN2.getText());
         xp.setN1(n1);
@@ -137,7 +141,7 @@ public class FrmSuma extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
+    public static void main(String args[]) {// ES EL METODO PRINCIPAL PARA QUE SE PUEDE EJECUTAR EL PROYECTO//
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
