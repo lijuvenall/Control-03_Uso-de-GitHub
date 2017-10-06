@@ -19,6 +19,8 @@ public class FrmSuma extends javax.swing.JFrame {
 
     public FrmSuma() {
         initComponents();
+        /**Estas acciones hacen que el formulario tengan un mejor diseño, tanto el tamaño, ubicacion dentro de la pantalla, el nombre
+        del formulario y alineamiento de los cursores en cada Text Field*/
         this.setSize(400, 300);
         this.setLocationRelativeTo(null);
         this.setTitle("Suma");
@@ -105,7 +107,7 @@ public class FrmSuma extends javax.swing.JFrame {
 
     private void btnCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcularActionPerformed
         // TODO add your handling code here:
-        int n1, n2, resp;
+                int n1, n2, resp;
         n1 = Integer.parseInt(txtN1.getText());
         n2 = Integer.parseInt(txtN2.getText());
         xp.setN1(n1);
@@ -123,6 +125,8 @@ public class FrmSuma extends javax.swing.JFrame {
 
     private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarActionPerformed
         // TODO add your handling code here:
+        /**En este Boton se realiza la liberación o limpieza en el campo de datos, asi mismo permite mantener un diseño 
+        mas factible*/
         this.txtN1.setText("");
         this.txtN2.setText("");
         this.txtSuma.setText("");
@@ -130,6 +134,7 @@ public class FrmSuma extends javax.swing.JFrame {
 
     private void btnHistorialActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHistorialActionPerformed
         // TODO add your handling code here:
+        /**En este boton se muestra mediante un JOptionPane las acciones que se realiza al momento de realizar una operación*/
         JOptionPane.showMessageDialog(this, "Historial de Operaciones\n" + cadena,
                 "Historial", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_btnHistorialActionPerformed
