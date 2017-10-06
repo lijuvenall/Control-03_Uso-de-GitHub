@@ -11,5 +11,14 @@ public class Operaciones {
         }
         return suma;
     }
+    public float operarDivision(float n1,float n2){
+            float div=0;
+            if((n1>10 && n1<20)&&(n2>10 && n2<20)){
+                div= n1/n2;
+            }else{
+                div=0;
+            }
+            return div;
+            }
 
 }
